@@ -1,0 +1,38 @@
+.rebb-nav {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  li {
+    display: flex;
+    transition-duration: 0.5s;
+    padding: 25px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    right: 0;
+    display: none;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+}

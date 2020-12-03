@@ -1,0 +1,14 @@
+import './App.css'
+import Navigation from '../navigation/Navigation'
+import Routes from './Routes'
+import {BrowserRouter} from 'react-router-dom'
+
+const App = () => (
+    <>
+        <BrowserRouter>
+            <Routes />
+        </BrowserRouter>
+    </>
+)
+
+export default App
